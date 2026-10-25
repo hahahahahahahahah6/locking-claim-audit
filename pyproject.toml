@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "locking-claim-audit"
+version = "0.1.0"
+description = "Offline audit of documented cross-process exclusion promises against Python source."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+dependencies = []
+
+[project.scripts]
+locking-claim-audit = "locking_claim_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
